@@ -12,9 +12,9 @@ export class WaterDrop extends LitElement {
       box-shadow: -2px 8px 3px -4px #fff, -3px 16px 8px 0 #444,
         -2px 14px 14px #666 inset;
       position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 0;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
     .water::before,
     .water::after {
