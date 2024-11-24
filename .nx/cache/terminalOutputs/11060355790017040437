@@ -1,0 +1,4 @@
+
+> @painting/ui@0.0.1 build D:\workspace\painting-ui\packages\paintings
+> tsc && tsc --project tsconfig.cjs.json
+

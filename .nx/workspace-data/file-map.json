@@ -1,0 +1,200 @@
+{
+  "version": "6.0",
+  "nxVersion": "20.1.3",
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "@painting/ui": [
+        {
+          "file": "packages/paintings/Castle.stories.ts",
+          "hash": "11772917201151525098"
+        },
+        {
+          "file": "packages/paintings/Castle.ui.ts",
+          "hash": "9261477515739257500"
+        },
+        {
+          "file": "packages/paintings/Drop.stories.ts",
+          "hash": "8764683498596404830"
+        },
+        {
+          "file": "packages/paintings/Drop.ui.ts",
+          "hash": "16471252640473975760"
+        },
+        {
+          "file": "packages/paintings/Flower.stories.ts",
+          "hash": "11680202507767889661"
+        },
+        {
+          "file": "packages/paintings/Flower.ui.ts",
+          "hash": "12187328587100724674"
+        },
+        {
+          "file": "packages/paintings/SvgFilter.ts",
+          "hash": "583136121218646074"
+        },
+        {
+          "file": "packages/paintings/assets/img/Castle.png",
+          "hash": "316595851572685914"
+        },
+        {
+          "file": "packages/paintings/assets/img/drop.png",
+          "hash": "10242399300763776504"
+        },
+        {
+          "file": "packages/paintings/filter.svg.ts",
+          "hash": "11806889675342727898"
+        },
+        {
+          "file": "packages/paintings/index.ts",
+          "hash": "4286908581502029696"
+        },
+        {
+          "file": "packages/paintings/package.json",
+          "hash": "17237168418728212389",
+          "deps": [
+            "npm:@storybook/web-components",
+            "npm:typescript",
+            "npm:lit"
+          ]
+        },
+        {
+          "file": "packages/paintings/tsconfig.cjs.json",
+          "hash": "14957044256491714132"
+        },
+        {
+          "file": "packages/paintings/tsconfig.json",
+          "hash": "7014912638169303558"
+        }
+      ],
+      "docs": [
+        {
+          "file": "apps/docs/.gitignore",
+          "hash": "2910695307382833677"
+        },
+        {
+          "file": "apps/docs/.storybook/main.ts",
+          "hash": "4165706146971134641"
+        },
+        {
+          "file": "apps/docs/.storybook/preview.ts",
+          "hash": "5249382079603095388"
+        },
+        {
+          "file": "apps/docs/README.md",
+          "hash": "5222898940979069107"
+        },
+        {
+          "file": "apps/docs/eslint.config.js",
+          "hash": "16145672096969245511"
+        },
+        {
+          "file": "apps/docs/index.html",
+          "hash": "4025202329384162906"
+        },
+        {
+          "file": "apps/docs/package.json",
+          "hash": "12737172010958629430",
+          "deps": [
+            "npm:@chromatic-com/storybook",
+            "npm:@eslint/js",
+            "npm:@storybook/addon-essentials",
+            "npm:@storybook/addon-interactions",
+            "npm:@storybook/addon-links",
+            "npm:@storybook/addon-onboarding",
+            "npm:@storybook/blocks",
+            "npm:@storybook/react",
+            "npm:@storybook/react-vite",
+            "npm:@storybook/test",
+            "npm:@storybook/web-components",
+            "npm:@storybook/web-components-vite",
+            "npm:@takuma-ru/auto-story-generator",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:@vitejs/plugin-react",
+            "npm:eslint",
+            "npm:eslint-plugin-react-hooks",
+            "npm:eslint-plugin-react-refresh",
+            "npm:eslint-plugin-storybook",
+            "npm:globals@15.12.0",
+            "npm:storybook",
+            "npm:typescript",
+            "npm:typescript-eslint",
+            "npm:vite",
+            "npm:@lit/react",
+            "@painting/ui",
+            "npm:react",
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "apps/docs/public/vite.svg",
+          "hash": "16046085400642193116"
+        },
+        {
+          "file": "apps/docs/src/App.css",
+          "hash": "3739391659270974612"
+        },
+        {
+          "file": "apps/docs/src/App.tsx",
+          "hash": "1764010347097003290"
+        },
+        {
+          "file": "apps/docs/src/assets/react.svg",
+          "hash": "16069471864800376455"
+        },
+        {
+          "file": "apps/docs/src/index.css",
+          "hash": "957896817323665666"
+        },
+        {
+          "file": "apps/docs/src/main.tsx",
+          "hash": "11038211546439381838"
+        },
+        {
+          "file": "apps/docs/src/vite-env.d.ts",
+          "hash": "12946363841406869089"
+        },
+        {
+          "file": "apps/docs/tsconfig.app.json",
+          "hash": "14077292355205835216"
+        },
+        {
+          "file": "apps/docs/tsconfig.json",
+          "hash": "2365188958523842680"
+        },
+        {
+          "file": "apps/docs/tsconfig.node.json",
+          "hash": "3810366411942401755"
+        },
+        {
+          "file": "apps/docs/vite.config.ts",
+          "hash": "16225914092815047172"
+        }
+      ]
+    },
+    "nonProjectFiles": [
+      {
+        "file": ".gitignore",
+        "hash": "15585111753650872"
+      },
+      {
+        "file": "README.md",
+        "hash": "3582660427435913376"
+      },
+      {
+        "file": "package.json",
+        "hash": "1604971460226607503"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "11954903173241785140"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "4338752560729969404"
+      }
+    ]
+  }
+}

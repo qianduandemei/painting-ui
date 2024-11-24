@@ -1,14 +1,11 @@
-// src/components/WaterDrop.ts
 import { LitElement, css, html } from 'lit';
 import { customElement } from 'lit/decorators.js';
-
+import './SvgFilter';
 
 const mainColor = css`#000`;
 const lightcolor = css`#ffeb3b`;
-@customElement('castle-element')
+@customElement('castle-ui')
 export class Castle extends LitElement {
-    
-    
 
     static styles = css`
         .castle, 
@@ -28,9 +25,7 @@ export class Castle extends LitElement {
         .castle {
                 width: 100px;
                 height: 60px;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+                position: relative;
                 filter: url(#fractal);
         }
 
@@ -134,17 +129,10 @@ export class Castle extends LitElement {
             height: 13px;
         }
   `;
-
     render() {
-        return html`<div class="castle">
-                <svg width="0" height="0">
-                    <defs>
-                        <filter id="fractal">
-                            <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="fontNoise" />
-                            <feDisplacementMap in="SourceGraphic" in2="fontNoise" scale="8" />
-                        </filter>
-                    </defs>
-                </svg>
+        return html`
+        <svg-filter></svg-filter>
+        <div class="castle">
                 <div class="castle__tower castle__tower--middle"></div>
                 <div class="castle__tower castle__tower--left">
                     <div class="castle__window castle__window--left"></div>
@@ -159,4 +147,6 @@ export class Castle extends LitElement {
                 <div class="castle__window castle__window--tower"></div>
             </div>`;
     }
+
+    
 }

@@ -2,13 +2,13 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { WaterDrop} from'@painting/ui'
+import { Water} from'@painting/ui'
 import { createComponent } from '@lit/react'
 import React from 'react'
 
 export const MyElementComponent = createComponent({
-  tagName: 'water-drop',
-  elementClass: WaterDrop,
+  tagName: 'water-ui',
+  elementClass: Water,
   react: React
 });
 
