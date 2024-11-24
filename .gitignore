@@ -25,3 +25,5 @@ build
 *.sw?
 
 *storybook.log
+.nx
+!.nx/workflows
