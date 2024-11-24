@@ -1,5 +1,5 @@
 import { html } from 'lit';
-import { Meta, StoryFn } from '@storybook/web-components';
+import { Meta, StoryFn, StoryObj } from '@storybook/web-components';
 import './Flower.ui';
 
 // 默认导出元数据
@@ -26,6 +26,8 @@ export default {
   },
 } as Meta;
 
+type Story = StoryObj;
+
 // 默认故事
 const Template: StoryFn = ({ petals, skin }) => html`
   <flower-ui .petals=${petals} .skin=${skin}></flower-ui>
@@ -39,10 +41,21 @@ Classic.args = {
 };
 
 // 故事：白色主题
-export const WhiteYellow = Template.bind({});
-WhiteYellow.args = {
-  petals: 4, // 白色主题例子：8个花瓣
-  skin: 'white-yellow',
+// export const WhiteYellow = Template.bind({});
+// WhiteYellow.args = {
+//   petals: 4, // 白色主题例子：8个花瓣
+//   skin: 'white-yellow',
+// };
+
+
+ // 故事：白色主题
+export const WhiteYellow: Story = {
+
+  name: 'WhiteYellow',
+  args: {
+    petals: 4, // 白色主题例子：8个花瓣
+    skin: 'white-yellow',
+  },
 };
 
 // 故事：密集花瓣

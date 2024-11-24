@@ -5,69 +5,6 @@
   "nxJsonPlugins": [],
   "fileMap": {
     "projectFileMap": {
-      "@painting/ui": [
-        {
-          "file": "packages/paintings/Castle.stories.ts",
-          "hash": "11772917201151525098"
-        },
-        {
-          "file": "packages/paintings/Castle.ui.ts",
-          "hash": "9261477515739257500"
-        },
-        {
-          "file": "packages/paintings/Drop.stories.ts",
-          "hash": "8764683498596404830"
-        },
-        {
-          "file": "packages/paintings/Drop.ui.ts",
-          "hash": "16471252640473975760"
-        },
-        {
-          "file": "packages/paintings/Flower.stories.ts",
-          "hash": "11680202507767889661"
-        },
-        {
-          "file": "packages/paintings/Flower.ui.ts",
-          "hash": "12187328587100724674"
-        },
-        {
-          "file": "packages/paintings/SvgFilter.ts",
-          "hash": "583136121218646074"
-        },
-        {
-          "file": "packages/paintings/assets/img/Castle.png",
-          "hash": "316595851572685914"
-        },
-        {
-          "file": "packages/paintings/assets/img/drop.png",
-          "hash": "10242399300763776504"
-        },
-        {
-          "file": "packages/paintings/filter.svg.ts",
-          "hash": "11806889675342727898"
-        },
-        {
-          "file": "packages/paintings/index.ts",
-          "hash": "4286908581502029696"
-        },
-        {
-          "file": "packages/paintings/package.json",
-          "hash": "17237168418728212389",
-          "deps": [
-            "npm:@storybook/web-components",
-            "npm:typescript",
-            "npm:lit"
-          ]
-        },
-        {
-          "file": "packages/paintings/tsconfig.cjs.json",
-          "hash": "14957044256491714132"
-        },
-        {
-          "file": "packages/paintings/tsconfig.json",
-          "hash": "7014912638169303558"
-        }
-      ],
       "docs": [
         {
           "file": "apps/docs/.gitignore",
@@ -79,7 +16,7 @@
         },
         {
           "file": "apps/docs/.storybook/preview.ts",
-          "hash": "5249382079603095388"
+          "hash": "5255207738095765411"
         },
         {
           "file": "apps/docs/README.md",
@@ -171,6 +108,73 @@
         {
           "file": "apps/docs/vite.config.ts",
           "hash": "16225914092815047172"
+        }
+      ],
+      "@painting/ui": [
+        {
+          "file": "packages/paintings/Card.stories.ts",
+          "hash": "15663836744591686412"
+        },
+        {
+          "file": "packages/paintings/Card.ui.ts",
+          "hash": "1624053582743587246"
+        },
+        {
+          "file": "packages/paintings/Castle.stories.ts",
+          "hash": "11772917201151525098"
+        },
+        {
+          "file": "packages/paintings/Castle.ui.ts",
+          "hash": "12362352822281935836"
+        },
+        {
+          "file": "packages/paintings/Drop.stories.ts",
+          "hash": "8764683498596404830"
+        },
+        {
+          "file": "packages/paintings/Drop.ui.ts",
+          "hash": "5383402882978021420"
+        },
+        {
+          "file": "packages/paintings/Flower.stories.ts",
+          "hash": "4115140865979344674"
+        },
+        {
+          "file": "packages/paintings/Flower.ui.ts",
+          "hash": "17687846094801334660"
+        },
+        {
+          "file": "packages/paintings/SvgFilter.ts",
+          "hash": "11111042893142455703"
+        },
+        {
+          "file": "packages/paintings/assets/img/Castle.png",
+          "hash": "316595851572685914"
+        },
+        {
+          "file": "packages/paintings/assets/img/drop.png",
+          "hash": "10242399300763776504"
+        },
+        {
+          "file": "packages/paintings/index.ts",
+          "hash": "16845221609922643692"
+        },
+        {
+          "file": "packages/paintings/package.json",
+          "hash": "17237168418728212389",
+          "deps": [
+            "npm:@storybook/web-components",
+            "npm:typescript",
+            "npm:lit"
+          ]
+        },
+        {
+          "file": "packages/paintings/tsconfig.cjs.json",
+          "hash": "14957044256491714132"
+        },
+        {
+          "file": "packages/paintings/tsconfig.json",
+          "hash": "7014912638169303558"
         }
       ]
     },
