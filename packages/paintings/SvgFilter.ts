@@ -1,7 +1,10 @@
 import { LitElement, html, css } from 'lit';
-import { customElement } from 'lit/decorators.js';
+import { customElement, property  } from 'lit/decorators.js';
 @customElement('svg-filter')
 export class SvgFilterComponent extends LitElement {
+  @property({ type: String }) baseFrequency = '0.02'; // 默认值为 "0.02"
+  @property({ type: Number }) numOctaves = 3; // 默认值为 3
+  @property({ type: Number }) scale = 8; // 默认值为 8
   render() {
     return html`
       <svg style="display:none">
@@ -9,14 +12,14 @@ export class SvgFilterComponent extends LitElement {
           <filter id="fractal">
             <feTurbulence
               type="fractalNoise"
-              baseFrequency="0.02"
-              numOctaves="3"
+              baseFrequency="${this.baseFrequency}"
+              numOctaves="${this.numOctaves}"
               result="fontNoise"
             />
             <feDisplacementMap
               in="SourceGraphic"
               in2="fontNoise"
-              scale="8"
+              scale="${this.scale}"
             />
           </filter>
         </defs>

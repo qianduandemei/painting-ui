@@ -1,44 +1,60 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import { Water} from'@painting/ui'
+import { Flower, Card } from '@painting/ui'
 import { createComponent } from '@lit/react'
 import React from 'react'
 
-export const MyElementComponent = createComponent({
-  tagName: 'water-ui',
-  elementClass: Water,
+export const FlowerComponent = createComponent({
+  tagName: 'flower-ui',
+  elementClass: Flower,
+  react: React
+});
+
+export const CardComponent = createComponent({
+  tagName: 'card-ui',
+  elementClass: Card,
   react: React
 });
 
 function App() {
-  const [count, setCount] = useState(0)
+  const generateRandomFlowers = (numFlowers = 10) => {
+    console.log(2313)
+    const getPosition = (value: number, axisName: string): { [key: string]: string } =>
+      value > 50
+        ? { [axisName === 'y' ? "bottom" : "right"]: `${100 - value}%` }
+        : { [axisName === 'y' ? "top" : "left"]: `${value}%` };
+
+    return Array.from({ length: numFlowers }).map(() => {
+      const yPosition = Math.random() * 100;
+      const xPosition = Math.random() * 100;
+
+      return {
+        style: {
+          ...getPosition(yPosition, "y"),
+          ...getPosition(xPosition, "x"),
+        },
+        petals: Math.random() > 0.5 ? 4 : 5,
+        width: Math.random() * 5 + 35,
+      };
+    });
+  };
+
+  const flowers = generateRandomFlowers(20);
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="edging flex">
+        <CardComponent bgColor="#f5f5f5" beforeColor="#4b9ec1">
+          {flowers.map((flower, index) => (
+            <FlowerComponent
+              key={index}
+              style={flower.style}
+              petals={flower.petals}
+              width={flower.width}
+              height={flower.width}
+              skin={Math.random() > 0.5 ? "white-yellow" : "classic"}
+            />
+          ))}
+        </CardComponent>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-      <MyElementComponent></MyElementComponent>
-    </>
   )
 }
 

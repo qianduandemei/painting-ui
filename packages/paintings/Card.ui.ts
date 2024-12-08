@@ -14,6 +14,8 @@ export class Card extends LitElement {
   @property({ type: String, attribute: 'bg-color' }) bgColor = '#e0e0e0';
 
 
+  @property({ type: String, attribute: 'before-color' }) beforeColor = '#ffffff';
+
   static styles = css`
     :host {
       display: block;
@@ -21,6 +23,7 @@ export class Card extends LitElement {
       --card-width: 450px;
       --bg-color: #e0e0e0; /* 默认背景颜色 */
       --before-color: #ffffff;
+      --shadow-opacity: 0.5; /* 默认阴影透明度 */
     }
 
     .card {
@@ -30,7 +33,8 @@ export class Card extends LitElement {
       border-radius: 5%;
       position: relative;
       overflow: hidden;
-      filter: url(#fractal);
+      box-shadow: calc(var(--card-width) * 0.01) calc(var(--card-width) * 0.01)
+                  calc(var(--card-width) * 0.02) rgba(0, 0, 0, var(--shadow-opacity));
     }
 
     .card::before {
@@ -42,6 +46,8 @@ export class Card extends LitElement {
       position: absolute;
       top: 5%;
       left: 5%;
+      box-shadow: inset calc(var(--card-width) * 0.005) calc(var(--card-width) * 0.005)
+                  calc(var(--card-width) * 0.01) rgba(0, 0, 0, var(--shadow-opacity));
     }
 
     /* 插槽传入的内容样式 */
@@ -64,6 +70,10 @@ export class Card extends LitElement {
     // 动态设置背景颜色
     if (changedProps.has('bgColor')) {
       this.style.setProperty('--bg-color', this.bgColor);
+    }
+
+    if (changedProps.has('beforeColor')) {
+      this.style.setProperty('--before-color', this.beforeColor);
     }
   }
 

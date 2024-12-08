@@ -16,7 +16,7 @@
         },
         {
           "file": "apps/docs/.storybook/preview.ts",
-          "hash": "5255207738095765411"
+          "hash": "4492734801707363344"
         },
         {
           "file": "apps/docs/README.md",
@@ -71,11 +71,15 @@
         },
         {
           "file": "apps/docs/src/App.css",
-          "hash": "3739391659270974612"
+          "hash": "3467749341572078441"
         },
         {
           "file": "apps/docs/src/App.tsx",
-          "hash": "1764010347097003290"
+          "hash": "1297360939026212572"
+        },
+        {
+          "file": "apps/docs/src/Sign.tsx",
+          "hash": "11032457368146355796"
         },
         {
           "file": "apps/docs/src/assets/react.svg",
@@ -83,11 +87,11 @@
         },
         {
           "file": "apps/docs/src/index.css",
-          "hash": "957896817323665666"
+          "hash": "3244421341483603138"
         },
         {
           "file": "apps/docs/src/main.tsx",
-          "hash": "11038211546439381838"
+          "hash": "13209861836223075451"
         },
         {
           "file": "apps/docs/src/vite-env.d.ts",
@@ -113,11 +117,11 @@
       "@painting/ui": [
         {
           "file": "packages/paintings/Card.stories.ts",
-          "hash": "15663836744591686412"
+          "hash": "3582259910483308845"
         },
         {
           "file": "packages/paintings/Card.ui.ts",
-          "hash": "1624053582743587246"
+          "hash": "14977704816386982958"
         },
         {
           "file": "packages/paintings/Castle.stories.ts",
@@ -137,27 +141,43 @@
         },
         {
           "file": "packages/paintings/Flower.stories.ts",
-          "hash": "4115140865979344674"
+          "hash": "13360370951195820011"
         },
         {
           "file": "packages/paintings/Flower.ui.ts",
-          "hash": "17687846094801334660"
+          "hash": "15815754866686333776"
+        },
+        {
+          "file": "packages/paintings/RoadSign.stories.ts",
+          "hash": "10086392066321953695"
+        },
+        {
+          "file": "packages/paintings/RoadSign.ui.ts",
+          "hash": "12451010774429620315"
         },
         {
           "file": "packages/paintings/SvgFilter.ts",
-          "hash": "11111042893142455703"
+          "hash": "4615129902118140043"
         },
         {
           "file": "packages/paintings/assets/img/Castle.png",
           "hash": "316595851572685914"
         },
         {
+          "file": "packages/paintings/assets/img/card.png",
+          "hash": "15365051190987067831"
+        },
+        {
           "file": "packages/paintings/assets/img/drop.png",
           "hash": "10242399300763776504"
         },
         {
+          "file": "packages/paintings/assets/img/flower.png",
+          "hash": "11226424276549125976"
+        },
+        {
           "file": "packages/paintings/index.ts",
-          "hash": "16845221609922643692"
+          "hash": "3084689082216983724"
         },
         {
           "file": "packages/paintings/package.json",
@@ -181,11 +201,11 @@
     "nonProjectFiles": [
       {
         "file": ".gitignore",
-        "hash": "15585111753650872"
+        "hash": "14831920137541757005"
       },
       {
         "file": "README.md",
-        "hash": "3582660427435913376"
+        "hash": "15853247010494501093"
       },
       {
         "file": "package.json",

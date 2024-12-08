@@ -47,10 +47,10 @@ export class Flower extends LitElement {
     /* 前景花瓣（主题颜色） */
     .flower__petal--fg {
       position: absolute;
-      top: 1%;
+      top: 2%;
       left: 50%;
-      width: 28%;
-      height: 49%;
+      width: 26%;
+      height: 48%;
       background-color: var(--petal-color, #fea9a7); /* 默认红色 */
       border-radius: 50%;
       transform-origin: bottom center;
@@ -58,16 +58,17 @@ export class Flower extends LitElement {
       z-index: 10;
     }
 
-    .flower--center {
+    .flower__center {
       position: absolute;
       top: 50%;
       left: 50%;
       width: 15%;
       height: 15%;
-      background-color: var(--center-color, #000); /* 默认黑色 */
+      background-color: var(--center-color, #ac0c07); /* 默认红黑色 */
       border-radius: 50%;
       transform: translate(-50%, -50%);
       z-index: 20;
+      border: 1px solid #000;
     }
   `;
 
@@ -93,9 +94,9 @@ export class Flower extends LitElement {
         break;
       case 'classic':
       default:
-        // 默认主题为经典红色花瓣、黑色花蕊
+        // 默认主题为经典红色花瓣、红黑色花蕊
         this.style.setProperty('--petal-color', '#fea9a7'); // 红色花瓣
-        this.style.setProperty('--center-color', '#000000'); // 黑色花蕊
+        this.style.setProperty('--center-color', '#ac0c07'); // 红黑色花蕊
         break;
     }
   }
@@ -162,7 +163,7 @@ export class Flower extends LitElement {
       <svg-filter></svg-filter>
       <div class="flower">
         ${this.renderPetals()} <!-- 动态渲染花瓣 -->
-        <div class="flower--center"></div><!-- 花中心 -->
+        <div class="flower__center"></div><!-- 花中心 -->
       </div>
     `;
   }
