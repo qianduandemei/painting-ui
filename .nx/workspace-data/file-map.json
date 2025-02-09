@@ -71,15 +71,19 @@
         },
         {
           "file": "apps/docs/src/App.css",
-          "hash": "3467749341572078441"
+          "hash": "17976392567589745633"
         },
         {
           "file": "apps/docs/src/App.tsx",
           "hash": "1297360939026212572"
         },
         {
+          "file": "apps/docs/src/Blessing.tsx",
+          "hash": "15461875536584687086"
+        },
+        {
           "file": "apps/docs/src/Sign.tsx",
-          "hash": "11032457368146355796"
+          "hash": "15732353635334482085"
         },
         {
           "file": "apps/docs/src/assets/react.svg",
@@ -91,7 +95,7 @@
         },
         {
           "file": "apps/docs/src/main.tsx",
-          "hash": "13209861836223075451"
+          "hash": "7761168538382247932"
         },
         {
           "file": "apps/docs/src/vite-env.d.ts",
@@ -115,6 +119,14 @@
         }
       ],
       "@painting/ui": [
+        {
+          "file": "packages/paintings/Blessing.stories.ts",
+          "hash": "2624065553681171682"
+        },
+        {
+          "file": "packages/paintings/Blessing.ui.ts",
+          "hash": "15694025193164167973"
+        },
         {
           "file": "packages/paintings/Card.stories.ts",
           "hash": "3582259910483308845"
@@ -177,7 +189,7 @@
         },
         {
           "file": "packages/paintings/index.ts",
-          "hash": "3084689082216983724"
+          "hash": "14169411049515570097"
         },
         {
           "file": "packages/paintings/package.json",
