@@ -1,8 +1,8 @@
 {
   "run": {
     "command": "nx build @painting/ui",
-    "startTime": "2025-02-09T14:18:40.120Z",
-    "endTime": "2025-02-09T14:18:42.769Z",
+    "startTime": "2025-02-11T10:15:00.076Z",
+    "endTime": "2025-02-11T10:15:02.627Z",
     "inner": false
   },
   "tasks": [
@@ -10,9 +10,9 @@
       "taskId": "@painting/ui:build",
       "target": "build",
       "projectName": "@painting/ui",
-      "hash": "13886899566275273010",
-      "startTime": "2025-02-09T14:18:40.127Z",
-      "endTime": "2025-02-09T14:18:42.768Z",
+      "hash": "17258761771986286268",
+      "startTime": "2025-02-11T10:15:00.082Z",
+      "endTime": "2025-02-11T10:15:02.626Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0

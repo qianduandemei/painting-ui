@@ -29,7 +29,6 @@ export class SpringBlessing extends LitElement {
     }
 
     .content {
-      position: absolute;
       color: var(--gold-color);
       font-size: calc(var(--container-width) / 2); /* 根据容器宽度调整字体大小 */
       z-index: 1;
