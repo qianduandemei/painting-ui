@@ -5,7 +5,9 @@
   "main": "dist/esm/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf dist && tsc && tsc --project tsconfig.cjs.json"
+    "build": "rm -rf dist && tsc && tsc --project tsconfig.cjs.json",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +17,8 @@
     "lit": "^3.3.0"
   },
   "devDependencies": {
+    "@storybook/web-components-vite": "^9.0.2",
+    "storybook": "^9.0.2",
     "typescript": "~5.8.3"
   }
 }
