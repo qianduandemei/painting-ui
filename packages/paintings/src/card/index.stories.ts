@@ -1,39 +1,37 @@
 import { html } from 'lit';
 import type { Meta, StoryObj } from '@storybook/web-components-vite';
-import { Card} from './index.ui';
-import type { CardProps } from './index.ui';
+import './index.ui'; 
 const meta = {
-  title: 'Components/Card', // 在 Storybook 中的路径
-  tags: ['autodocs'],
-  render: (args) => Card(args),
+  title: 'Components/Card',
+  component: 'card-ui',
   argTypes: {
     width: {
       control: 'number',
       description: 'Card width (square card, width equals height)',
       defaultValue: 450,
     },
-    bgColor: {
+    'bg-color': {
       control: 'color',
       description: 'Background color of the card',
       defaultValue: '#e0e0e0',
     },
-    beforeColor: {
-        control: 'color',
-        defaultValue: '#ffffff',
-    }
   },
-} satisfies Meta<CardProps>;
+} satisfies Meta;
 
 export default meta;
 
-type Story = StoryObj<CardProps>;
+type Story = StoryObj;
 
-
+const Template = (args: any) => html`
+  <card-ui width=${args.width} bg-color=${args['bg-color']}>
+    <slot></slot>
+  </card-ui>
+`;
 
 export const Default: Story = {
+  render: Template,
   args: {
     width: 450,
-    bgColor: '#e0e0e0',
-    beforeColor: '#ffffff'
+    'bg-color': '#e0e0e0',
   },
 };
